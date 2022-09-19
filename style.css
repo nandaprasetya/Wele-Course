@@ -1,0 +1,867 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(248, 248, 248);
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgb(104, 104, 104);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+nav a{
+    padding: 0px 10px;
+    margin: 0px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #000;
+}
+
+nav img{
+    width: 70px;
+    height: 55px;
+}
+
+nav #btn-nav{
+    font-size: 20px;
+    display: none;
+}
+
+.nav-menu{
+    width: 30vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 20px;
+    transform: translate(-1024px);
+    transition: 3s ease-out;
+}
+
+.nav-menu.active{
+    transform: translate(0px);
+    transition: 1s ease-in;
+}
+
+.nav-menu #btn-respon{
+    text-align: end;
+    width: 100%;
+    font-weight: 600;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    width: 80%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.home {
+    width: 100%;
+    height: 100%;
+    padding: 120px 0px 200px 40px;
+    background-image: url(gambar/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.home .text-home{
+    max-width: 600px;
+}
+
+.home .text-home span{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffde3e;
+    margin: 5px 0px;
+}
+
+.home .text-home p{
+    margin: 5px 0px;
+}
+
+#getting-started{
+    display: flex;
+    width: 400px;
+    margin: 15px 0px;
+}
+
+.area-tanggal{
+    text-align: center;
+    margin: 15px;
+
+}
+
+.box-tanggal{
+    width: 55px;
+    height: 55px;
+    background-color: #ffde3e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.area-tanggal h1{
+    font-size: 20px;
+}
+
+.home button{
+    padding: 16px 80px;
+    border: none;
+    font-size: 15px;
+    background-color: #ffde3e;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.box-counter{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgb(202, 202, 202);
+    padding: 20px;
+    transform: translateY(-80px);
+    background-color: #fff;
+}
+
+.area-counter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.area-counter i{
+    font-size: 40px;
+    color: #ffde3e;
+}
+
+.area-counter h1{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.kelebihan{
+    background-image: url(gambar/background-kelebihan.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kelebihan h1{
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.isi-kelebihan{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+}
+
+.area-kelebihan{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin: 20px 0px;
+}
+
+.area-kelebihan img{
+    width: 400px;
+    height: 350px;
+}
+
+.text-kel{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-kel h1{
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+.promo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0px 0px;
+}
+
+.area-promo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box-produk{
+    width: 300px;
+    height: 625px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 30px;
+    box-shadow: 0px 0px 10px 0px rgb(217, 217, 217);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.box-produk img{
+    width: 100%;
+    height: 280px;
+}
+
+.box-produk h1{
+    font-size: 20px;
+    margin: 5px 0px;
+}
+
+.box-produk p{
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.box-produk .harga-promo{
+    text-decoration: line-through;
+    color: rgb(149, 149, 149);
+    margin: 10px 0px 0px;
+}
+
+.box-produk button{
+    padding: 8px 60px;
+    margin: 0px 0px 20px;
+    border: none;
+    background-color: #ffde3e;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.testimoni .carousel-cell{
+    margin:10px 15px;
+}
+
+.patner{
+    text-align: center;
+    padding: 70px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.patner h1{
+    font-size: 30px;
+    color: #ffde3e;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.patner .carousel{
+    width: 90%;
+}
+
+.patner img{
+    width: 100px;
+    height: 25px;
+    margin: 20px 50px;
+}
+
+.testimoni{
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0px 50px;
+}
+
+.testimoni h1{
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.testimoni .carousel {
+    height: 100%;
+}
+
+.testimoni .box-testi{
+    width: 70%;
+    margin: 30px 15%;
+    height: fit-content;
+    padding: 20px 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #c7c7c7;
+}
+
+.box-testi .profile-testi{
+    display: flex;
+    text-align: left;
+    margin: 20px 0px;
+}
+
+.box-testi p{
+    font-size: 15px;
+    color: #4e4e4e;
+}
+
+.profile-testi img{
+    width: 60px;
+    height: 60px;
+}
+
+.text-profile {
+    margin-left: 20px;
+}
+
+.text-profile h1{
+    text-align: start;
+    font-size: 20px;
+}
+
+
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+    background-color: rgb(241, 241, 241);
+}
+
+.footer-1, .footer-2, .footer-3, .footer-4{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img{
+    width: 65px;
+    height: 55px;
+    margin: 0px 10px 0px 0px;
+}
+
+.footer-sosial{
+    display: flex;
+}
+
+.footer-sosial a i{
+    font-size: 30px;
+    color: rgb(78, 78, 78);
+    margin: 10px;
+}
+
+.footer-2 h1, .footer-3 h1, .footer-4 h1{
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-bottom: 5px;  
+  color: rgb(78, 78, 78);
+}
+
+.footer-2 a, .footer-3 a, .footer-4 a{
+    font-size: 17px;
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.footer-2 a:hover, .footer-3 a:hover, .footer-4 a:hover{
+    color: #ffde3e;
+}
+
+.program{
+    padding: 80px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.program select{
+    width: 280px;
+    margin: 10px 0px;
+    outline: none;
+}
+
+.area-program{
+    width: 90%;
+    height: 100%;
+}
+
+.area-program .box-produk{
+    min-width: 300px;
+    height: 620px;
+    justify-content: space-evenly;
+    background-color: #fff;
+}
+
+.tentang{
+    height: 130vh;
+    background-image: url(gambar/backgroundabout.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tentang .text-tentang{
+    text-align: center;
+    max-width: 500px;
+    background-color: #ffffffb6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.text-tentang img{
+    width: 200px;
+    height: 150px;
+}
+
+.text-tentang p{
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.info-tentang{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+}
+
+.info-tentang img{
+    width: 500px;
+    height: 450px;
+}
+
+.info-tentang .box-tentang{
+    max-width: 500px;
+    text-align: center;
+}
+
+.box-tentang h1{
+    font-size: 25px;
+    color: #ffde3e;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.box-tentang p{
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.faq{
+    padding: 70px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.faq h1{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.area-faq{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px #c7c7c7;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px 20px;
+}
+
+.putar1, .putar2, .putar3{
+    transition: 1s;
+}
+
+.putar1.active,.putar2.active, .putar3.active{
+    transform:rotate(230deg);
+    transition: 1s;
+}
+
+.slider h1{
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+.isi-slide{
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px #c7c7c7;
+    display: none;
+    padding: 10px;
+}
+
+.isi-slide h1{
+    font-size: 17px;
+}
+
+.kontak{
+    padding: 80px 0px 40px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+}
+
+.box-kontak{
+    width: 500px;
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.area-kontak{
+    display: flex;
+    margin: 20px 10px;
+}
+
+.area-kontak i{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.area-kontak p{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+#map{
+    width: 500px;
+    height: 500px;
+}
+
+.login{
+    position: fixed;
+    width: fit-content;
+    height: 100vh;
+    display: flex;
+}
+
+#video-login{
+    left: 200px;
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+}
+
+.login form, .signup form{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 20px;
+    background-color: #fff;
+}
+
+.login form a, .signup form a{
+    font-size: 25px;
+    margin: 10px 0px;
+    color: rgb(228, 0, 0);
+    text-align: end;
+    float: right;
+    width: 90%;
+}
+
+.login form h1, .signup form h1{
+    font-size: 30px;
+    color: #ffde3e;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.login form p, .signup form p{
+    font-size: 14px;
+    color: #4e4e4e;
+    margin: 8px 0px;
+}
+
+.login button, .signup button{
+    padding: 10px 50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+    border: none;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.login a, .signup a{
+    text-decoration: none;
+}
+
+.login button img, .signup button img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.login form input, .signup form input{
+    outline: none;
+    width: 85%;
+    height: 30px;
+    padding: 5px 0px;
+    margin: 7px 0px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.login .text-login{
+    display: flex;
+    align-items: center;
+}
+.signup{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 100vh;
+    position: fixed;
+}
+
+@media screen and (max-width:768px){
+    nav{
+        justify-content: space-between;
+        padding: 0px 10%;
+    }
+
+    nav a{
+        display: none;
+    }
+
+    nav #btn-nav{
+        display: block;
+    }
+
+    .home .text-home{
+        width: 70%;
+        height: 230px;
+    }
+
+    .home .text-home span{
+        font-size: 18px;
+    }
+
+    .home .text-home p{
+        font-size: 15px;
+    }
+
+    #getting-started{
+        margin: 10px 0px;
+        width: 90%;
+    }
+
+    .box-tanggal{
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .home button{
+        padding: 10px 54px;
+    }
+
+    .area-kelebihan img{
+        width: 300px;
+        height: 250px;
+    }
+
+    .footer-1, .footer-2, .footer-3, .footer-4{
+        width: 100%;
+    }
+
+    .area-program{
+        width: 100%;
+    }
+
+    .area-program .box-produk{
+        margin: 30px 18px;
+    }
+
+    .slider,.isi-slide{
+        width: 90%;
+    }
+
+    .slider h1, .isi-slide h1{
+        font-size: 15px;
+    }
+    .login, .signup{
+        height: 100%;
+    }
+
+    .login form, .signup form{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    .nav-menu{
+        width: fit-content;
+    }
+    .home .text-home{
+        width: 80%;
+        height: 200px;
+    }
+
+    .home .text-home p{
+        font-size: 13px;
+    }
+
+    .area-counter i{
+        font-size: 20px;
+    }
+
+    .area-counter h1{
+        font-size: 13px;
+    }
+
+    .area-counter p{
+        font-size: 10px;
+    }
+
+    .text-kel{
+        width: 90%;
+    }
+
+     .testimoni .box-testi{
+        width: 90%;
+        margin: 30px 5%;
+        padding: 20px 10px;
+     }
+
+     .area-program .box-produk{
+        margin: 30px 4px;
+    }
+
+     .tentang .text-tentang {
+        width: 90%;
+     }
+
+     .info-tentang img{
+        width: 300px;
+        height: 280px;
+     }
+
+     .info-tentang .box-tentang{
+        width: 90%;
+     }
+
+     .slider h1, .isi-slide h1{
+        font-size: 12px;
+     }
+
+     .box-kontak{
+        width: 90%;
+     }
+
+     .area-kontak i{
+        font-size: 20px;
+     }
+
+     .area-kontak p{
+        font-size: 17px;
+     }
+
+     #map{
+        width: 90%;
+        height: 350px;
+     }
+
+     .login form, .signup form{
+        width: 320px;
+     }
+
+     .signup form h1{
+        font-size: 20px;
+     }
+
+     .signup form p{
+        font-size: 12px;
+     }
+
+     .login button, .signup button{
+        font-size: 12px;
+     }
+
+}
